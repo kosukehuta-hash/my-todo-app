@@ -200,7 +200,7 @@ export function TodoApp({ user }: TodoAppProps) {
             disabled={saving}
             className="rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-60"
           >
-            {saving ? "追加中..." : "追加"}
+            {saving ? "追加中..." : ""}
           </button>
         </div>
       </form>
