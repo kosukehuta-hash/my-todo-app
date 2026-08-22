@@ -7,12 +7,16 @@ const eslintConfig = defineConfig([
   ...nextTs,
   // Override default ignores of eslint-config-next.
   globalIgnores([
-    // Default ignores of eslint-config-next:
-    ".next/**",
-    "out/**",
-    "build/**",
-    "next-env.d.ts",
-  ]),
+  // Default ignores of eslint-config-next:
+  ".next/**",
+  "out/**",
+  "build/**",
+  "next-env.d.ts",
+
+  // Supabase CLI generated files
+  "supabase/.temp/**",
+  "supabase/.branches/**",
+]),
 ]);
 
 export default eslintConfig;
